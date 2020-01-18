@@ -67,7 +67,7 @@ The specifications are listed below.
 - changes recorded on this component should update the information shown by the `Display` component.
 
 Feel free add other components and organize and name your components any way you want to satisfy the requirements. **Make it up and make it happen developer!**.
-
+==
 ## Stretch Problem
 
 This section is **optional** and not counted towards MVP. Start working on it after you're done with the main assignment.

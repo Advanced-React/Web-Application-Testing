@@ -15,26 +15,41 @@ class App extends Component {
 	}
 
 	handleStrikes = () => {
-    this.setState({
-      if(strike )
-      strike: this.state.strike + 1
-    })
-  }
+		if (this.state.strike < 2) {
+			this.setState({
+				strike : this.state.strike + 1,
+			});
+		}
+		else {
+			this.setState({
+				strike : 0,
+				ball   : 0,
+			});
+		}
+	};
 	handleBalls = () => {
-    this.setState({
-      ball: this.state.ball + 1
-    })
-  }
+		if (this.state.ball < 3) {
+			this.setState({
+				ball : this.state.ball + 1,
+			});
+		}
+		else {
+			this.setState({
+				ball   : 0,
+				strike : 0,
+			});
+		}
+	};
 	handleFouls = () => {
-    this.setState({
-      foul: this.state.foul + 1
-    })
-  }
+		this.setState({
+			foul : this.state.foul + 1,
+		});
+	};
 	handleHits = () => {
-    this.setState({
-      hit: this.state.hit + 1
-    })
-  }
+		this.setState({
+			hit : this.state.hit + 1,
+		});
+	};
 
 	render () {
 		return (
