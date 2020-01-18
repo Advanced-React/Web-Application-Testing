@@ -41,9 +41,11 @@ class App extends Component {
 		}
 	};
 	handleFouls = () => {
-		this.setState({
-			foul : this.state.foul + 1,
-		});
+		if (this.state.strike < 2) {
+			this.setState({
+				strike : this.state.strike + 1,
+			})
+		}
 	};
 	handleHits = () => {
 		this.setState({
